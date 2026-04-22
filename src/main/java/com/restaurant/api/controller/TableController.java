@@ -17,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/tables")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", allowedMethods = {"GET", "POST", "PUT", "DELETE", "OPTIONS"})
 @Tag(name = "Tables", description = "Restaurant table management")
 public class TableController {
 

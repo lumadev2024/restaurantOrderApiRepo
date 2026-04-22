@@ -18,6 +18,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/orders/{orderId}/items")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", allowedMethods = {"GET", "POST", "PUT", "DELETE", "OPTIONS"})
 @Tag(name = "Order Items", description = "Manage items within an order")
 public class OrderItemController {
 

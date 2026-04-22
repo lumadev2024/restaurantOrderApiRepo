@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/orders")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", allowedMethods = {"GET", "POST", "PUT", "DELETE", "OPTIONS"})
 @Tag(name = "Orders", description = "Order lifecycle management")
 public class OrderController {
 
